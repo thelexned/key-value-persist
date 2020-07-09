@@ -1,0 +1,33 @@
+{
+  "name": "key-value-persist",
+  "version": "1.0.0",
+  "description": "Key value store cli",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "test-with-coverage": "jest --coverage"
+  },
+  "bin": {
+    "kvp": "./bin/kvp"
+  },
+  "keywords": [
+    "key value store",
+    "cli",
+    "sqlite"
+  ],
+  "author": "Lex Ned",
+  "license": "MIT",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.2",
+    "commander": "^5.1.0",
+    "keyv": "^4.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "engines": {
+    "node": ">=0.12",
+    "npm": ">=6.14.4"
+  }
+}
