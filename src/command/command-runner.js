@@ -13,7 +13,7 @@ CommandRunner.prototype.run = function (args) {
     if (this.command.isGetCommand()) {
         this.persister.get(this.command.getKey()).then((value) => {
             if (value) {
-                process.stdout.write(value);
+                process.stdout.write(`${value}\n`);
             }
         });
     }

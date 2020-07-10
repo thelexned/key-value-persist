@@ -52,7 +52,7 @@ describe("CommandRunner", () => {
             expect(persisterGetSpy).toHaveBeenCalledWith(key);
             persister.get(key).then(() => {
                 expect(processStdoutWriteSpy).toHaveBeenCalledTimes(1);
-                expect(processStdoutWriteSpy).toHaveBeenCalledWith(value);
+                expect(processStdoutWriteSpy).toHaveBeenCalledWith(`${value}\n`);
                 done();
             });
         });
