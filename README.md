@@ -1,10 +1,8 @@
-# Key value store cli
+# Key value store CLI
 
 ## How to use it
 
 ``` 
-git clone https://github.com/thelexned/key-value-persist.git
-npm install
-npm link
+npm install -g key-value-persist
 kvp --help
 ```
