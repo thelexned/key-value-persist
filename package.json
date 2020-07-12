@@ -8,6 +8,10 @@
     "test": "jest",
     "test-with-coverage": "jest --coverage"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/thelexned/key-value-persist.git"
+  },
   "bin": {
     "kvp": "./bin/kvp"
   },
